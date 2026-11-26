@@ -1,0 +1,39 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environment ---
+.venv/
+venv/
+
+# --- Secrets: never commit ---
+.env
+.env.*
+!.env.example
+
+# --- Test and tool caches ---
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Local models and large files ---
+*.gguf
+*.safetensors
+/models/
+
+# --- Local data (audit logs, vault) ---
+*.db
+*.sqlite3
+
+# --- Editor and OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Claude: personal settings only ---
+.claude/settings.local.json
