@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "siper"
+version = "0.0.1"
+description = "Security gateway between users and LLMs: blocks prompt injection and keeps sensitive data from leaving."
+requires-python = ">=3.14"
+authors = [{ name = "burakkaygusuzoglu" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["siper*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]   
