@@ -8,7 +8,12 @@ version = "0.0.1"
 description = "Security gateway between users and LLMs: blocks prompt injection and keeps sensitive data from leaving."
 requires-python = ">=3.14"
 authors = [{ name = "burakkaygusuzoglu" }]
-dependencies = []
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn>=0.32",
+    "httpx>=0.28",
+    "pydantic-settings>=2.6",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
