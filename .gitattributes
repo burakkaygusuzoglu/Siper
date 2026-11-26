@@ -1,0 +1,2 @@
+# Normalize line endings: LF in the repo, no phantom diffs on Windows.
+* text=auto eol=lf
